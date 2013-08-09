@@ -12,6 +12,6 @@ if [ ! -e "$PROTOBUFSRC/configure" ]; then
 fi
 
 if [ ! -e "$PROTOBUF" ]; then
-	cd $PROTOBUFSRC && ./configure CC=clang CXX="clang++ -std=c++11 -stdlib=libc++" CXXFLAGS="-O3" --prefix=$(pwd)/$TARGET || exit 1
-	cd $PROTOBUFSRC && make install || exit 1
+  cd $PROTOBUFSRC && ./configure CC=clang CXX="clang++ -std=c++11 -stdlib=libc++" CXXFLAGS="-O3" --prefix=$(pwd)/$TARGET || exit 1
+  cd $PROTOBUFSRC && make install || exit 1
 fi
