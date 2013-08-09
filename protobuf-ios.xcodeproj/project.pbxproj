@@ -459,9 +459,9 @@
 		7B69C06B17A27FEE005E48FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				DSTROOT = /tmp/protobuf_ios.dst;
-				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "protobuf-ios/protobuf-ios-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -479,9 +479,9 @@
 		7B69C06C17A27FEE005E48FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				DSTROOT = /tmp/protobuf_ios.dst;
-				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "protobuf-ios/protobuf-ios-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
