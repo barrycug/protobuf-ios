@@ -4,7 +4,7 @@ TARGET=../protobuf/
 PROTOBUFSRC=../protobuf-2.5.0/
 
 if [ ! -e $PROTOBUFSRC ]; then
-  svn co http://protobuf.googlecode.com/svn/tags/2.5.0 $PROTOBUFSRC || exit 1
+  svn export http://protobuf.googlecode.com/svn/tags/2.5.0 $PROTOBUFSRC || exit 1
 fi
 
 if [ ! -e $PROTOBUFSRC/configure ]; then
