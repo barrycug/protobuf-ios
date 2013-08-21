@@ -8,10 +8,10 @@ if [ ! -e $PROTOBUFSRC ]; then
 fi
 
 if [ ! -e $PROTOBUFSRC/configure ]; then
-  cd $PROTOBUFSRC && ./autogen.sh
+  (cd $PROTOBUFSRC && ./autogen.sh) || exit 1
 fi
 
 if [ ! -e $TARGET ]; then
-  cd $PROTOBUFSRC && ./configure CC="clang -std=gnu99" CXX="clang++ -std=gnu++11 -stdlib=libc++" CXXFLAGS="-O3" --prefix=$(pwd)/$TARGET || exit 1
-  cd $PROTOBUFSRC && make install || exit 1
+  (cd $PROTOBUFSRC && ./configure CC="clang -std=gnu99" CXX="clang++ -std=gnu++11 -stdlib=libc++" CXXFLAGS="-O3" --prefix=$(pwd)/$TARGET) || exit 1
+  (cd $PROTOBUFSRC && make install) || exit 1
 fi
