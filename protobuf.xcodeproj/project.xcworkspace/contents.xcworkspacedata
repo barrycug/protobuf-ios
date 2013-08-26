@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:protobuf-ios.xcodeproj">
+      location = "self:protobuf.xcodeproj">
    </FileRef>
 </Workspace>
