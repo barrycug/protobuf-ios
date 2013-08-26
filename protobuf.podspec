@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name         = "protobuf"
   s.version      = "2.0.5"
   s.summary      = "Protocol Buffers - Google's data interchange format."
-  s.homepage     = "https://code.google.com/p/protobuf"
+  s.homepage     = "https://github.com/axet/protobuf-ios"
   s.license      = { :type => 'GOOGLE', :file => 'COPYING.txt' }
 	s.author       = "Google" 
   s.source       = { :svn => "http://protobuf.googlecode.com/svn/tags/2.5.0" }
