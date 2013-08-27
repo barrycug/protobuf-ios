@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.header_dir = ''
   s.public_header_files = 'config.h', 'src/**/*.h'
   s.source_files = 'config.h', 'src/**/*.{h,cc}'
-	s.exclude_files = 'src/**/test_*', 'src/google/protobuf/compiler/', 'src/test/', 'src/**/*_unittest.cc',  'src/**/unittest_*'
+	s.exclude_files = 'src/**/test_*', 'src/google/protobuf/compiler/', 'src/test/', 'src/**/*_unittest.cc',  'src/**/unittest*'
 	s.compiler_flags = '-I$(SRCROOT)/protobuf/src -I$(SRCROOT)/protobuf'
 	s.header_mappings_dir = 'src'
 
